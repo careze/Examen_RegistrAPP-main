@@ -1,0 +1,48 @@
+<ion-header [translucent]="true" class="header-card">
+  <ion-toolbar >
+    
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true" (click)="cargaUsaurios" class="custom-background">
+  <div class="welcome-card tertiary">
+    <h2>Bienvenido: {{ nombre }}</h2>
+    <h2>Correo: {{ correo }}</h2>
+    <h2>Genero: {{ genero }}</h2>
+    
+    <ion-icon name="settings" (click)="saveProfileChanges()"></ion-icon>
+  </div>
+   <ion-card-header>
+    <ion-card-title class="ion-text-center">Menu</ion-card-title>
+  </ion-card-header>
+  <div class="button-container">
+    <ion-button class="full-width-button" color="tertiary" routerLink="/escanear">
+      <ion-icon name="qr-code-outline" slot="start"></ion-icon>
+      Escanear
+    </ion-button>
+    <ion-button class="full-width-button" color="tertiary" routerLink="/visualizar">
+      <ion-icon name="eye-outline" slot="start"></ion-icon>
+      Visualizar
+    </ion-button>
+    <ion-button class="full-width-button" color="tertiary" routerLink="/api">
+      <ion-icon name="pizza-outline" slot="start"></ion-icon>
+      Menu de la institucion
+    </ion-button>
+    <ion-button class="full-width-button" color="danger"  (click)="logout()">
+      <ion-icon name="power-outline" slot="start"></ion-icon>
+      Desconectar
+    </ion-button>
+ 
+  </div>
+
+  
+  <ion-footer>
+    <ion-row class="footer-content">
+      <ion-col size="6" class="text-right">
+        <ion-img src="assets/img/logo.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-footer>
+</ion-content>

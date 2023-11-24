@@ -1,0 +1,16 @@
+/* Fondo */
+.custom-background {
+  background: linear-gradient(to bottom, #1A1A1A, #00377b, #FFB800);
+  color: white;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilo resistro card */
+ .login-card {
+  max-width: 450px; 
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

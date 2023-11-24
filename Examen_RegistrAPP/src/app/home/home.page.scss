@@ -1,0 +1,48 @@
+ion-header {
+  --ion-background-color: #007bff;
+}
+
+ion-title {
+  color: white;
+  font-size: 24px;
+}
+
+/* Fondo */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(to bottom, #1A1A1A,#00377b, #FFB800); 
+  height: 100%; 
+  color: white;  
+}
+
+/* Espacio entre los botones y el texto de bienvenida */
+ion-button {
+  margin-bottom: 10px;
+  margin-top: 20px; 
+}
+
+/* Texto */
+.welcome-text {
+  font-size: 36px;
+  margin-top: 80px;
+  color: #ffffff; 
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* botones*/
+ion-button[color="primary"] {
+  --ion-color-base: #007bff;
+}
+
+ion-button[color="secondary"] {
+  --ion-color-base: #28a745;
+}
+
+
+
+

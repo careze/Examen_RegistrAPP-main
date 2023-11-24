@@ -1,0 +1,45 @@
+/* Login card */
+.login-page {
+  background-color: #51ff00; 
+}
+
+.login-card {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+  padding: 16px;
+}
+
+.forgot-password {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #007bff; 
+}
+
+
+/* Fondo */
+.button-container {
+
+    background: linear-gradient(to bottom, #1A1A1A,#00377b, #FFB800); 
+    height: 100%; 
+    color: white;  
+  }
+
+
+
+/* Boton animado */
+#animatable-button {
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+  }
+  
+#animatable-button.clicked {
+    transform: scale(1.2); 
+    background-color: #FF5722; 
+    color: white;
+    box-shadow: 0px 4px 16px 6px rgba(255, 87, 34, 0.4); 
+  }

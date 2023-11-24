@@ -1,0 +1,51 @@
+ion-content {
+    --background: #f5f5f5;
+    
+  }
+  
+  ion-label h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  ion-label p {
+    font-size: 16px;
+    color: #777;
+    
+  }
+
+
+/* Fondo */
+.custom-background {
+    background: linear-gradient(to bottom, #1A1A1A, #00377b, #FFB800);
+    color: white;
+    height: 100vh; 
+    display: center;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+  }
+
+/* Estilo resistro card */
+.login-card {
+    max-width: 450px; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  /* CSS para el modal estilo ventana */
+.custom-modal-slide-in {
+  animation: slide-in 0.5s ease-in-out;
+  max-width: 80%; 
+  margin: 0 auto; 
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

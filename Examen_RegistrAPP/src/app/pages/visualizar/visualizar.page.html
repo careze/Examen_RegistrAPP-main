@@ -1,0 +1,47 @@
+<ion-header [translucent]="true" class="header-card">
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/menu" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Visualizar</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card *ngFor="let asistencia of asistencias; let i = index">
+    <ion-card-header>
+      <ion-card-title>{{ asistencia.asignatura }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-label>Asignatura:</ion-label>
+          <strong>{{ asistencia.asignatura }}</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Docente:</ion-label>
+          <strong>{{ asistencia.docente }}</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Hora:</ion-label>
+          <strong>{{ asistencia.hora }}</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Fecha:</ion-label>
+          <strong>{{ asistencia.fecha }}</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Leccion:</ion-label>
+          <strong>{{ asistencia.leccion }}</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Sala:</ion-label>
+          <strong>{{ asistencia.sala }}</strong>
+        </ion-item>
+        <ion-item>
+          <ion-label>Seccion:</ion-label>
+          <strong>{{ asistencia.seccion }}</strong>
+        </ion-item>
+      </ion-list>  
+    </ion-card-content>
+  </ion-card>
+</ion-content>

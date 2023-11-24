@@ -1,0 +1,64 @@
+/* Header */
+.header-card{
+      max-width: 400px;
+      margin: 0 auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Fondo */
+.custom-background {
+  background: linear-gradient(to bottom, #1A1A1A, #00377b, #FFB800);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Bienvenido card arriba */
+.welcome-card {
+  background-color: #00377b; 
+  color: white; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
+}
+
+/* Estilos Botones */
+.button-container {
+  max-width: 300px;
+  width: 200%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.full-width-button {
+  width: 23rem;
+}
+
+/*Footer */
+ion-footer {
+  background-color: #333; 
+  color: white; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  
+}
+
+.footer-content {
+  padding: 10px;
+}
+
+ion-img {
+  width: 110px; 
+  height: auto; 
+}
+

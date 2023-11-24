@@ -1,0 +1,33 @@
+<ion-header [translucent]="true" class="login-card">
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/home" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="login-page ">
+  <ion-card-content class="login-card button-container">
+    <ion-card >
+      <ion-card-header >
+        <ion-card-title>Inicio de Sesión</ion-card-title>
+      </ion-card-header>
+      <ion-card-content class="login-form ">
+        <ion-item>
+          <ion-icon name="person" slot="start"></ion-icon>
+          <ion-input [(ngModel)]="usuario" placeholder="Usuario" clearInput="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="lock-closed" slot="start"></ion-icon>
+          <ion-input [(ngModel)]="contrasena" type="password" placeholder="Contraseña" clearInput="true"></ion-input>
+        </ion-item>
+        <ion-button (click)="onLogin()" id="animatable-button" (click)="animateButton()"  color="tertiary" expand="full">Iniciar Sesión</ion-button>
+        <ion-button (click)="onReset()" color="danger" expand="full">Reset</ion-button>
+        <a routerLink="/reset-password" class="forgot-password">¿Olvidaste tu contraseña?</a>
+      </ion-card-content>
+    </ion-card>
+<!--     <h1>PGY4121-001D</h1> -->
+  </ion-card-content>
+  
+</ion-content>

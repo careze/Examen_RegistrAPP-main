@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/menu" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Escanear</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content [fullscreen]="true">
+  <div class="ion-text-center scanner-container" >
+    <ion-icon name="scan" class="scanner-icon mi-elemento"></ion-icon>
+    <h2>Escáner</h2>
+    <ion-button  (click)="scan()" color="tertiary" expand="full" >Escanear</ion-button>
+  </div>
+  <ion-button expand="full" (click)="takePicture()">
+    Seleccionar foto
+  </ion-button>
+  <ion-img [src]="capturedImage" ></ion-img>
+</ion-content>
+
+

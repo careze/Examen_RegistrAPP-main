@@ -1,0 +1,50 @@
+.header-card{
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ion-content {
+    --background: linear-gradient(to bottom, #1A1A1A, #00377b, #FFB800);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+/* Parametros escaner */
+  .scanner-container {
+    margin-top: 20px;
+  }
+  
+  .scanner-icon {
+    font-size: 100px;
+    color: #007bff;
+  }
+  
+
+/* Animacion agrandar icon-escaner */
+.mi-elemento {
+    width: 100px;
+    height: 100px;
+    animation: miAnimacion 2s ease infinite;
+  }
+  
+@keyframes miAnimacion {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+}
+  
+

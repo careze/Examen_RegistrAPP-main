@@ -1,0 +1,37 @@
+<ion-header [translucent]="true" class="login-card">
+  <ion-toolbar >
+    <ion-buttons slot="start" >
+      <ion-back-button routerLink="/escanear" icon="arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+ <ion-content [fullscreen]="true" class="custom-background">
+  <ion-card-content  class="login-card custom-background">
+  <ion-list >
+    <ion-card-header >
+      <ion-card-title>Asistencia</ion-card-title>
+    </ion-card-header>
+  
+ <ion-item *ngFor="let asistencia of asistencias">
+      <ion-label>
+        <h2>{{ asistencia.asignatura }}</h2>
+        <p>Docente: {{ asistencia.docente }}</p>
+        <p>Fecha: {{ asistencia.fecha }}</p>
+        <p>Hora: {{ asistencia.hora }}</p>
+        <p>Lección: {{ asistencia.leccion }}</p>
+        <p>Sala: {{ asistencia.sala }}</p>
+        <p>Sección: {{ asistencia.seccion }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-button color="success" expand="full" routerLink="/menu">OK</ion-button> 
+</ion-card-content>
+</ion-content> 
+
+ 
+
+
+ 

@@ -1,0 +1,32 @@
+/* Header */
+.header-card{
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/*Footer */
+ion-footer {
+    background-color: #333; 
+    color: white; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px; 
+    left: -30px;  
+}
+  
+.footer-content {
+    padding: 10px;
+}
+  
+ion-img {
+    width: 110px; 
+    height: auto; 
+}
+ 
+
+
+  
